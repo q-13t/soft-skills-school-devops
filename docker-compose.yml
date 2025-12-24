@@ -1,6 +1,7 @@
 services:
   frontend:
     container_name: softskills-frontend
+    restart: always
     build:
       context: ./soft-skills-frontend
       dockerfile: ./Dockerfile
@@ -14,6 +15,7 @@ services:
 
   backend:
     container_name: softskills-backend
+    restart: always
     build:
       context: ./soft-skills-school-api
       dockerfile: ./Dockerfile
